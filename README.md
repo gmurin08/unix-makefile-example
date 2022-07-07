@@ -7,10 +7,10 @@ A simple C program that declares a few variables and outputs their values to the
 
 ### To Run This Example Makefile
 
-* `git clone` this repo 
-* Navigate to the resulting directory
+* `git clone` this repo into a directory of your choosing
+* Navigate to the newly created sub-directory
 * Run `make` to run the program
-* Run `make clean` to remove resulting object files
+* Run `make clean` to cleanup the generated binaries
 
 ### How it Works
 
