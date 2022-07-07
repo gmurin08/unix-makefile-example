@@ -15,4 +15,11 @@ A simple C program that declares a few variables and outputs their values to the
 ### How it Works
 
 The constants defined in all caps at the top of the file act as variables that can be inserted into the file at runtime.
-For instance, the constant `OBJFILES` allows us to assign object files to be built by the program in one place instead of constantly rewriting in numerous places every time the dependency chain of the program changes. The contents of the constant can then be accessed using the speical macro `$(OBJFILES)`. 
+For instance, the constant `OBJFILES` allows us to assign object files to be built by the program in one place instead of constantly rewriting in numerous places every time the dependency chain of the program changes. The contents of the constant can then be accessed using the speical macro `$(OBJFILES)`. </br>
+
+From here, the file is broken down into `TARGETS`, `DEPENDENCIES`, and `COMMANDS` using the following syntax: </br>
+
+`<TARGET>:<DEPENDENCIES>` </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`COMMANDS`
+
+A tab MUST be used on the `COMMANDS` line in order for Make to properly read your file.
