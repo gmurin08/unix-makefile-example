@@ -2,7 +2,7 @@
 CC = gcc
 #compiler flags
 CFLAGS = -Wall
-#includes
+#linker flags
 LDFLAGS =
 #object files to build 
 OBJFILES = funcs.o main.o
